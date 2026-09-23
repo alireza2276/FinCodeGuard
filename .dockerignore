@@ -1,0 +1,46 @@
+# Git
+.git
+.github
+
+# Python virtual environments
+.venv
+venv
+env
+
+# Python cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Test / lint cache
+.pytest_cache
+.ruff_cache
+.mypy_cache
+.coverage
+htmlcov
+
+# IDE
+.idea
+.vscode
+
+# Secrets
+.env
+.env.*
+
+# Local datasets
+data/raw
+data/processed
+
+# Generated experiment results
+experiments/raw_results
+experiments/processed_results
+
+# Research drafts
+paper
+
+# Logs / temporary files
+*.log
+*.tmp
+tmp
+temp

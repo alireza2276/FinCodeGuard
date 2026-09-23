@@ -1,0 +1,12 @@
+services:
+  fincodeguard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    working_dir: /app
+
+    command: pytest
+
+    environment:
+      PYTHONUNBUFFERED: "1"
