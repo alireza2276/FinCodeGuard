@@ -1,0 +1,13 @@
+task_id: task_007_audit_approval
+title: Approval auditability
+description: Record evidence for financially significant approval actions.
+functional_requirements:
+  - An authorized checker can approve a pending payment.
+security_requirements:
+  - Approval audit records must identify the acting user.
+business_invariants:
+  - A successful approval must create one corresponding audit event.
+metadata:
+  domain: audit
+  category: auditability
+  pilot: true

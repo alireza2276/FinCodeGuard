@@ -1,0 +1,13 @@
+task_id: task_005_atomic_transfer
+title: Atomic account transfer
+description: Preserve consistency across debit and credit operations.
+functional_requirements:
+  - A valid transfer debits one account and credits another.
+security_requirements:
+  - The actor must be authorized to initiate the transfer.
+business_invariants:
+  - Debit and credit must either both succeed or both fail.
+metadata:
+  domain: transfers
+  category: atomicity
+  pilot: true

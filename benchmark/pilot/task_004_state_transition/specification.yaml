@@ -1,0 +1,13 @@
+task_id: task_004_state_transition
+title: Payment state-transition integrity
+description: Restrict payment workflow to permitted transitions.
+functional_requirements:
+  - A pending payment can transition to approved.
+security_requirements:
+  - State changes require an authorized actor.
+business_invariants:
+  - A rejected payment must not transition directly to settled.
+metadata:
+  domain: payments
+  category: state_transition
+  pilot: true

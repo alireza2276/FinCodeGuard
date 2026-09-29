@@ -1,0 +1,13 @@
+task_id: task_006_concurrent_withdrawal
+title: Concurrent withdrawal integrity
+description: Preserve balance rules under concurrent withdrawals.
+functional_requirements:
+  - A valid withdrawal reduces the account balance.
+security_requirements:
+  - Only an authorized actor may withdraw from the account.
+business_invariants:
+  - Concurrent withdrawals must not bypass the configured balance constraint.
+metadata:
+  domain: accounts
+  category: concurrency
+  pilot: true

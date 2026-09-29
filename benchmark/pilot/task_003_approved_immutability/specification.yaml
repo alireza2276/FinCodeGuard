@@ -1,0 +1,13 @@
+task_id: task_003_approved_immutability
+title: Approved payment immutability
+description: Protect critical payment fields after approval.
+functional_requirements:
+  - A pending payment can be edited by an authorized user.
+security_requirements:
+  - Unauthorized users must not edit protected payment fields.
+business_invariants:
+  - Amount and beneficiary fields must be immutable after approval.
+metadata:
+  domain: payments
+  category: immutability
+  pilot: true

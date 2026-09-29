@@ -1,0 +1,13 @@
+task_id: task_008_sensitive_logging
+title: Sensitive-data logging protection
+description: Prevent inappropriate disclosure through application logs.
+functional_requirements:
+  - The payment workflow emits operational logs.
+security_requirements:
+  - Sensitive authentication values must not be written to logs.
+business_invariants:
+  - Financial workflow logging must preserve required audit context without secrets.
+metadata:
+  domain: logging
+  category: sensitive_data
+  pilot: true

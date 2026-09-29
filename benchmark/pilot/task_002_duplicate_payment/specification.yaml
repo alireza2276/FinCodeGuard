@@ -1,0 +1,13 @@
+task_id: task_002_duplicate_payment
+title: Duplicate payment prevention
+description: Prevent duplicate financial effects for repeated requests.
+functional_requirements:
+  - A valid payment request can create one payment.
+security_requirements:
+  - A client-supplied idempotency key must be scoped to the authenticated actor.
+business_invariants:
+  - Reusing the same idempotency key must not create a second financial effect.
+metadata:
+  domain: payments
+  category: idempotency
+  pilot: true

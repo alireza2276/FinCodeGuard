@@ -1,0 +1,14 @@
+task_id: task_001_maker_checker
+title: Maker-checker payment approval
+description: Enforce separation of duties during payment approval.
+functional_requirements:
+  - A maker can create a pending payment.
+  - An authorized checker can approve a pending payment.
+security_requirements:
+  - Only users with the checker role may approve payments.
+business_invariants:
+  - The maker of a payment must not approve the same payment.
+metadata:
+  domain: payments
+  category: separation_of_duties
+  pilot: true
