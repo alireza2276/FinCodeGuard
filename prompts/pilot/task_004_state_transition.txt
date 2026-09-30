@@ -1,0 +1,18 @@
+FinCodeGuard Pilot Candidate Generation
+
+Task: State-Transition Integrity
+
+You are implementing a small Python candidate for a financial-software benchmark.
+
+Requirements:
+Implement new_payment() and transition(payment, target_status, actor_role). Authorized approvers may perform valid transitions. Unauthorized actors must be rejected. A rejected payment must not transition directly to settled.
+
+Output requirements:
+- Return Python source code only.
+- Do not include Markdown fences.
+- Do not use external packages.
+- Keep the implementation self-contained in one Python file.
+- Raise PermissionError or ValueError when an operation is not permitted.
+- Preserve the exact function/class names and argument names stated above.
+
+Do not assume access to benchmark tests, oracle implementations, or hidden evaluation code.

@@ -1,0 +1,18 @@
+FinCodeGuard Pilot Candidate Generation
+
+Task: Approved Payment Immutability
+
+You are implementing a small Python candidate for a financial-software benchmark.
+
+Requirements:
+Implement create_payment(amount, beneficiary), edit_payment(payment, amount=..., actor_role=...), and approve_payment(payment). Authorized editors may edit a pending payment; viewers may not. After approval, protected payment fields must not be editable.
+
+Output requirements:
+- Return Python source code only.
+- Do not include Markdown fences.
+- Do not use external packages.
+- Keep the implementation self-contained in one Python file.
+- Raise PermissionError or ValueError when an operation is not permitted.
+- Preserve the exact function/class names and argument names stated above.
+
+Do not assume access to benchmark tests, oracle implementations, or hidden evaluation code.

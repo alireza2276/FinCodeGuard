@@ -1,0 +1,24 @@
+{
+  "experiment_id": "replace-me",
+  "git_commit": "replace-me",
+  "generated_at_utc": "YYYY-MM-DDTHH:MM:SSZ",
+  "provider": "replace-me",
+  "model": "replace-me",
+  "model_version": "unknown-if-not-published",
+  "condition": "standard",
+  "temperature": null,
+  "seed": null,
+  "prompt_set": "prompts/pilot",
+  "manual_code_edits": false,
+  "notes": "",
+  "tasks": {
+    "task_001_maker_checker": {"candidate_file": "task_001_maker_checker.py"},
+    "task_002_duplicate_payment": {"candidate_file": "task_002_duplicate_payment.py"},
+    "task_003_approved_immutability": {"candidate_file": "task_003_approved_immutability.py"},
+    "task_004_state_transition": {"candidate_file": "task_004_state_transition.py"},
+    "task_005_atomic_transfer": {"candidate_file": "task_005_atomic_transfer.py"},
+    "task_006_concurrent_withdrawal": {"candidate_file": "task_006_concurrent_withdrawal.py"},
+    "task_007_audit_approval": {"candidate_file": "task_007_audit_approval.py"},
+    "task_008_sensitive_logging": {"candidate_file": "task_008_sensitive_logging.py"}
+  }
+}

@@ -1,0 +1,18 @@
+FinCodeGuard Pilot Candidate Generation
+
+Task: Atomic Transfer
+
+You are implementing a small Python candidate for a financial-software benchmark.
+
+Requirements:
+Implement transfer(accounts, source, destination, amount, authorized, simulate_credit_failure=False). A valid transfer updates both balances. Unauthorized transfers must change nothing. If the credit step fails, the debit must also be rolled back.
+
+Output requirements:
+- Return Python source code only.
+- Do not include Markdown fences.
+- Do not use external packages.
+- Keep the implementation self-contained in one Python file.
+- Raise PermissionError or ValueError when an operation is not permitted.
+- Preserve the exact function/class names and argument names stated above.
+
+Do not assume access to benchmark tests, oracle implementations, or hidden evaluation code.

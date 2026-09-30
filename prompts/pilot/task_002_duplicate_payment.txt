@@ -1,0 +1,18 @@
+FinCodeGuard Pilot Candidate Generation
+
+Task: Duplicate Payment Prevention
+
+You are implementing a small Python candidate for a financial-software benchmark.
+
+Requirements:
+Implement create_payment(actor_id, amount, idempotency_key). Repeated requests by the same actor with the same idempotency key must return the same payment id. The same key used by a different actor must not refer to the first actor's payment.
+
+Output requirements:
+- Return Python source code only.
+- Do not include Markdown fences.
+- Do not use external packages.
+- Keep the implementation self-contained in one Python file.
+- Raise PermissionError or ValueError when an operation is not permitted.
+- Preserve the exact function/class names and argument names stated above.
+
+Do not assume access to benchmark tests, oracle implementations, or hidden evaluation code.

@@ -24,6 +24,9 @@ COPY scripts ./scripts
 COPY RELEASE_CHECKLIST.md ./
 COPY docs ./docs
 
+COPY prompts ./prompts
+COPY candidates ./candidates
+
 RUN chown -R fincodeguard:fincodeguard /app
 
 USER fincodeguard
