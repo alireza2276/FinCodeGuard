@@ -21,6 +21,9 @@ COPY benchmark ./benchmark
 COPY .coveragerc ./
 COPY scripts ./scripts
 
+COPY RELEASE_CHECKLIST.md ./
+COPY docs ./docs
+
 RUN chown -R fincodeguard:fincodeguard /app
 
 USER fincodeguard
