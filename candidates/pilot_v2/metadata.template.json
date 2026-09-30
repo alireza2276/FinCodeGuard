@@ -1,0 +1,15 @@
+{
+  "experiment_id": "pilot-v2-baseline",
+  "contract_version": "pilot-v2",
+  "git_commit": "replace-me",
+  "generated_at_utc": "YYYY-MM-DDTHH:MM:SSZ",
+  "provider": "replace-me",
+  "model": "replace-me",
+  "model_version": "unknown-if-not-published",
+  "condition": "standard",
+  "temperature": null,
+  "seed": null,
+  "prompt_set": "prompts/pilot_v2",
+  "manual_code_edits": false,
+  "notes": "v1 pre-pilot runs excluded from main pilot metrics"
+}

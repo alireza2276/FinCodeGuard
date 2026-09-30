@@ -1,0 +1,23 @@
+FinCodeGuard Pilot Candidate Generation
+
+Contract version: pilot-v2
+
+You are implementing a small Python candidate for a financial-software benchmark.
+
+Requirements:
+Implement exactly:
+- transfer(accounts, source, destination, amount, authorized,
+  simulate_credit_failure=False)
+accounts is a mutable dictionary mapping account ids to numeric balances.
+Authorized valid transfers debit source and credit destination. Unauthorized calls
+must raise PermissionError or ValueError without changing balances. Invalid amounts
+or insufficient funds must be rejected. A simulated credit failure must raise an
+exception and leave both balances unchanged.
+Output requirements:
+- Return Python source code only.
+- Do not include Markdown fences.
+- Do not use external packages.
+- Keep the implementation self-contained in one Python file.
+- Raise PermissionError or ValueError when an operation is not permitted.
+- Preserve the exact function/class names and argument names stated above.
+- Do not assume access to benchmark tests, oracle implementations, or hidden evaluation code.

@@ -1,0 +1,22 @@
+FinCodeGuard Pilot Candidate Generation
+
+Contract version: pilot-v2
+
+You are implementing a small Python candidate for a financial-software benchmark.
+
+Requirements:
+Implement exactly:
+- create_payment(maker_id, amount) -> dict
+- approve_payment(payment, actor_id, role) -> dict
+create_payment must return a mutable dictionary containing at least maker_id, amount,
+status, and approved_by. New status is "pending" and approved_by is None.
+Only role "checker" may approve, and actor_id must differ from payment["maker_id"].
+Successful approval sets status to "approved" and approved_by to actor_id.
+Output requirements:
+- Return Python source code only.
+- Do not include Markdown fences.
+- Do not use external packages.
+- Keep the implementation self-contained in one Python file.
+- Raise PermissionError or ValueError when an operation is not permitted.
+- Preserve the exact function/class names and argument names stated above.
+- Do not assume access to benchmark tests, oracle implementations, or hidden evaluation code.
