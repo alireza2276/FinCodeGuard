@@ -18,6 +18,9 @@ RUN python -m pip install --no-cache-dir --upgrade pip \
 COPY tests ./tests
 COPY benchmark ./benchmark
 
+COPY .coveragerc ./
+COPY scripts ./scripts
+
 RUN chown -R fincodeguard:fincodeguard /app
 
 USER fincodeguard
